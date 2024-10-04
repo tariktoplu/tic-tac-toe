@@ -2,7 +2,8 @@ import { useState } from 'react';
 import './App.css'
 import Square from './square'
 import CalcWinner from './CalcWinner';
-
+import gsap from "gsap";
+import {useGSAP} from "@gsap/react";
 
 /* Proje fikri : Klasik tic tac toe yerine joker kullanaılabilen oyun yapılcak
     * oyunda oyuncuların süresi olacak ve belli sayıda jokerleri olacak
@@ -12,7 +13,7 @@ import CalcWinner from './CalcWinner';
     * unodaki jokerlerden esinlenilebir
     * karşı oyuncunun x/o sini değiştirme
     * kendi x/0 yerini değiştirme  */
-
+    
 function Board() {
 
   const [XisNext, setXisNext] = useState(true);
