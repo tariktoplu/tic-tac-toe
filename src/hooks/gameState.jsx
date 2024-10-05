@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import CalcWinner from './CalcWinner';
+import CalcWinner from '../components/CalcWinner';
 
 export function useGameState() {
   const [XisNext, setXisNext] = useState(true);

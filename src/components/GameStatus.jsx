@@ -1,4 +1,4 @@
-import { useGameStatus } from './gameState';
+import { useGameStatus } from '../hooks/gameState';
 
 function GameStatus() {
   const { winner, noNulls, XisNext } = useGameStatus();
